@@ -11,5 +11,3 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 end
-
-use Rack::Flash
