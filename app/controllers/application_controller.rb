@@ -1,7 +1,6 @@
 class ApplicationController < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   set :views, Proc.new { File.join(root, "../views/") }
-  use Rack::Flash
 
   configure do
     enable :sessions
