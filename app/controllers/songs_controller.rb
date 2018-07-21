@@ -23,6 +23,8 @@ class SongsController < ApplicationController
     redirect to "/songs/#{@song.slug}"
   end
 
-  
-  
+  patch '/songs/:slug/edit' do
+
+  end 
+
 end
