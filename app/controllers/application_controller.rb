@@ -1,4 +1,5 @@
 class ApplicationController < Sinatra::Base
+  use Rack::Flash
   register Sinatra::ActiveRecordExtension
   set :views, Proc.new { File.join(root, "../views/") }
 
