@@ -5,6 +5,10 @@ class ApplicationController < Sinatra::Base
   set :session_secret, "my_application_secret"
   set :views, Proc.new { File.join(root, "../views/") }
 
+  configure do
+    enable :Sessions
+  end
+
   get '/' do
     erb :index
   end
@@ -13,11 +17,8 @@ end
 
 
 
-class App < Sinatra::Base
-  configure do
-    enable :Sessions
-    set :session_secret, "pickles"
-  end
+
+
 
   get '/' do
     erb :index
