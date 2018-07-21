@@ -33,6 +33,7 @@ class SongsController < ApplicationController
     @song.name = params["Name"]
     @song.artist = params["Artist Name"]
     @song.genre_ids = params[:genres]
+    @song.save
   end
 
 end
