@@ -1,6 +1,6 @@
 <h1>Edit an Existing Song</h1>
 
-<form action="/songs/:slug/edit" method="POST">
+<form action="/songs/<%=@song.slug%>/edit" method="POST">
   <label for="Name">Name</label>
   <input type="text" name="Name">
   <br></br>
